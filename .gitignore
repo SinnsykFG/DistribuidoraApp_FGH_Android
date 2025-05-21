@@ -1,0 +1,92 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Eclipse JDT compiler settings
+.classpath
+
+# Android Studio and IntelliJ IDEA files & directories
+.idea/
+.gradle/
+local.properties
+*.iml
+*.ipr
+*.iws
+build/
+captures/
+output/
+
+# Keystore files (Important for security!)
+*.jks
+*.keystore
+
+# Log files
+*.log
+*.txt
+
+# Android Studio Profiler & Debugging files
+*.hprof
+*.snapshot
+*.navigation
+
+# Firebase specific files (if not already handled or if you have local configs)
+# google-services.json is usually versioned, but if you have local test versions, you might ignore them.
+# Be careful with this, as it's needed for CI/CD or other collaborators.
+# /app/google-services.json # Uncomment if you have a specific reason to ignore it (generally not recommended)
+
+# Lint & Inspection results (can be regenerated)
+lint/
+reports/
+
+# Android Studio's system files
+.DS_Store
+Thumbs.db
+
+# Crashlytics (if you're using Fabric/Firebase Crashlytics)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Google Play services (usually handled by .gitignore in library itself, but good to have)
+# If you have `google-services.json` in your root, but your app module is not `app`, adjust the path below.
+# /app/google-services.json # This is typically NOT ignored, but if you have a placeholder or specific local dev one, consider.
+
+# Kotlin
+*.kapt_metadata/
+* kapt_kapt_ignore_kdocs_ بقى_processor_options.txt
+
+# Generated files (often in build directories, but just in case)
+generated/
+
+# Local configuration files that might contain sensitive information
+# local.properties is already listed, but you might have others
+# secrets.properties
+# api_keys.xml (if you store keys there and don't want to commit them, though strings.xml with placeholders is better)
+
+# Android Profiling
+*.trace
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+.fake

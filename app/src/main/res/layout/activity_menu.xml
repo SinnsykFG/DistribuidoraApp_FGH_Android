@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MenuActivity">
+
+        <TextView
+            android:id="@+id/usuarioText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario: Cargando..."
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#f0f0f0"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp. Congelador: "
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textViewTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- °C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+
+            <View
+                android:id="@+id/viewIndicadorTemperatura"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewEstadoTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado: Desconocido"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección de Despacho (opcional, si no usa GPS):"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editTextDireccionDespacho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Av. Siempre Viva 742, Santiago"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/buttonUsarDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usar Esta Dirección"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monto Total de la Compra:"/>
+        <EditText
+            android:id="@+id/editTextValorCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el monto"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonCalcularDespacho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular Costo de Despacho"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/costoDespachoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costo de despacho: Calculando..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "286581288088",
+    "project_id": "despachapp-b1719",
+    "storage_bucket": "despachapp-b1719.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286581288088:android:ac0fb9788206e24d26f4ed",
+        "android_client_info": {
+          "package_name": "com.example.distribuidoraapp_semana6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286581288088-rnn6tsg920f0n97timg67926j693pigr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.distribuidoraapp_semana6",
+            "certificate_hash": "56c54c1f2c445ec72f87b1badf1c14d558a88541"
+          }
+        },
+        {
+          "client_id": "286581288088-830j9iennp1a8m7ilrkno0ib032t373g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCscT-ojmfowFjBWHKK9QXijuEsmDrlTtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286581288088-830j9iennp1a8m7ilrkno0ib032t373g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
